@@ -1,7 +1,7 @@
 // App.jsx
 import React, { useState } from 'react';
 import HomePage from './pages/HomePage';
-import SignupPage from './pages/SignupPage';
+import SignUpPage from './pages/SignUpPage';
 import LoginPage from './pages/LoginPage';
 import Header from './components/Header';
 
@@ -15,7 +15,7 @@ const LzyCrazyApp = () => {
 
       {/* Pages */}
       {currentPage === 'home' && <HomePage setCurrentPage={setCurrentPage} />}
-      {currentPage === 'signup' && <SignupPage setCurrentPage={setCurrentPage} />}
+      {currentPage === 'signup' && <SignUpPage setCurrentPage={setCurrentPage} />}
       {currentPage === 'login' && <LoginPage setCurrentPage={setCurrentPage} />}
     </div>
   );
